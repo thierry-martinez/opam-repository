@@ -8,10 +8,12 @@ find_llvm_config () {
         if hash brew 2>/dev/null; then
            brew_llvm_config="$(brew --cellar)"/llvm*/${version}*/bin/llvm-config
         fi
+        gentoo_llvm_config=/usr/lib64/llvm/${version}/bin/llvm-config
         for llvm_config in \
             llvm-config-$version llvm-config-${version}.0 \
             llvm-config${version}0 llvm-config-mp-$version \
             llvm-config-mp-${version}.0 $brew_llvm_config \
+            $gentoo_llvm_config \
             llvm-config; do
             llvm_version="`$llvm_config --version`" || continue
             return

@@ -18,9 +18,10 @@ depexts: [
     {os-distribution = "fedora"}
   ["llvm-clang-devel"] {os-family = "suse"}
   ["devel/clang" "devel/llvm"] {os = "freebsd"}
+  ["sys-devel/clang"] {os-distribution = "gentoo"}
 ]
 extra-files: [[
-  "configure.sh" "md5=2980f60a8c38e9a85352e4afb6a11fd3"
+  "configure.sh" "md5=5464954fcdfc0b714fa309b75c81cafc"
 ]]
 synopsis: "Virtual package relying on the installation of llvm and clang libraries (any version)"
 flags: conf
