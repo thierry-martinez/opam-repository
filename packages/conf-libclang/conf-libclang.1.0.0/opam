@@ -21,7 +21,7 @@ depexts: [
   ["sys-devel/clang"] {os-distribution = "gentoo"}
 ]
 extra-files: [[
-  "configure.sh" "md5=5464954fcdfc0b714fa309b75c81cafc"
+  "configure.sh" "md5=7712dce84bb23159686b506e90bd7104"
 ]]
 synopsis: "Virtual package relying on the installation of llvm and clang libraries (any version)"
 flags: conf
