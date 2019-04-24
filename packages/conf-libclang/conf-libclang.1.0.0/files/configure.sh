@@ -4,7 +4,7 @@ find_llvm_config () {
     # Locate llvm-config (taken from conf-llvm's configure.sh file)
 
     shopt -s nullglob
-    for version in 8 7 6 5 4 3; do
+    for version in 8 7 6 5 4 3.9 3.8 3.7 3.6 3.5 3.4; do
         if hash brew 2>/dev/null; then
            brew_llvm_config="$(brew --cellar)"/llvm*/${version}*/bin/llvm-config
         fi
